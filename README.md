@@ -1,31 +1,57 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleship Game
 
-Welcome USER_NAME,
+Battleship game is a python game which runs in the Code Institute mock terminal on Heroku.
+Users can try to beat the computer by finding all of the computer's battleship before the computer finds theirs.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## How to play
+## Features
+### Existing Features
+   * Random board generation
+     * Ships are randomly placed on both the player and both the player and computer boards
+     * The player cannot see where the coputer's ships are
+   * Play against the computer 
+   * Accepts user input
+   * Maintains scores
+   * Input Validation and error-checking 
+     * You must enter numbers
+     * You cannot enter the same guess twice
+   * Data maintained in class instances
 
-## Reminders
+  ### Future Features
+   * Allow player to select the board size and number of ships
+   * Allow player to position ships themselves
+   * Have ship large than 1 * 1
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Data Model
+  I decided to use a Board class as my model. The game creats two instance of the board class to hold the player's and the computer's board
 
-## Creating the Heroku app
+## Testing
+  I have manually tested this project by doing the following
+  * Passed the code through a PEP8 linter and confirmed there are no problem
+  * Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
+  * Tested in my local terminal and the Code Institute Heroku Terminal
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Bugs
+  Solved Bugs
+   * When i wrote the project i was getting index........
+   * My validate coordinates.......
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Remaining Bugs
+   * No bugs remaning
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Validator Testing
+   * PEP8
+   * No errors wre returned from PEP8online.com
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+## Deployment
+  This project was deployed using Code Institute's mock terminal for heroku
+  * Steps for deployment
+    * Fork or clon this repository
+    * Create a new Heroku app
+    * set the buildbacks to python and Node Js in that order
+    * link the Heroku app to the repository
+    * Click on Deploy
+## Credits 
+  * Code Institute for the deployment terminal
+  * Wikipedia for the details of the Battleship game          
+    
