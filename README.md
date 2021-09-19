@@ -9,15 +9,15 @@ Single Battleship game which means the player aginst the computer.
 
 ## Features
 
- ### Existing Features
-     * Ships are randomly placed on computer boards
-     * The player cannot see where the computer's ships are
+### Existing Features
+* 5 Ships are randomly placed on computer boards
+* The player cannot see where the computer's ships are
    * Play against the computer 
    * Accepts user input
    * Maintains scores
      
 
-  ### Future Features
+### Future Features
    * Tell to the player when the ship sunk 
 
 
@@ -32,7 +32,7 @@ Single Battleship game which means the player aginst the computer.
 
 ## Validator Testing
    
-   * No errors from PEP8online.com
+   * PEP8online.com Alright!
 
 ## Deployment
   This project was deployed using Code Institute's mock terminal for heroku
@@ -44,8 +44,8 @@ Single Battleship game which means the player aginst the computer.
     * Click on Deploy
 
 ## Credits 
-  * Knowledge Mavens who helped me code and practice. And this project is one of his work from online beginner tutorial. Ps: NOT MY IDEA, NOT MY WORK! 
-  * Code Institute , My teachers and Slack Family
+  * Knowledge Mavens, this project is from one of his many online beginner tutorial course and im so greatfull that. Thank you! 
+  * Code Institute , My teachers and Slack Family 
   * Wikipedia for the details of the Battleship game
          
     
