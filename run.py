@@ -9,7 +9,16 @@ from random import randint
 HIDDEN_BOARD = [[' '] * 8 for x in range(8)]
 GUESS_BOARD = [[' '] * 8 for x in range(8)]
 
-letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
+letters_to_numbers = {
+    'A': 0,
+    'B': 1,
+    'C': 2,
+    'D': 3,
+    'E': 4,
+    'F': 5,
+    'G': 6,
+    'H': 7
+}
 
 
 def print_board(board):
@@ -38,7 +47,7 @@ def get_ship_location():
     while column not in 'A B C D E F G H':
         print('Please enter a valid column')
         column = input('Please enter a ship column A-H: ').upper()
-    return int(row) - 1, letters_to_numbers[column]       
+    return int(row) - 1, letters_to_numbers[column]
 
 
 def count_hit_ships(board):
@@ -47,7 +56,7 @@ def count_hit_ships(board):
         for column in row:
             if column == 'X':
                 count += 1
-    return count            
+    return count
 
 
 create_ships(HIDDEN_BOARD)
@@ -72,5 +81,4 @@ while turns > 0:
     print('You have' + str(turns) + 'turns remaining')
     if turns == 0:
         print('Sorry, you ran out of turns, the game is over')
-        break      
-
+        break
